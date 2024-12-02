@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+     /* تنسيق الصفحات */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* تنسيق صفحة الشراء الآن */
+.container {
+  max-width: 600px;
+  padding: 20px;
+  /* background-color: white; */
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* تنسيق صفحة الدفع */
+form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form button {
+  border-radius: 8px;
+}
+
+/* زر الشراء الآن */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-success {
+  background-color: #050806;
+  border-color: #0d0e0d;
+}
+
+/* تنسيق النصوص في الحقول */
+label {
+  font-weight: bold;
+}                                                                                               
+</style>
+</head>
+<body>
+
+  <!-- صفحة الدفع -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Payment Information</h2>
+    <form>
+      <!-- اسم صاحب البطاقة -->
+      <div class="mb-3">
+        <label for="cardHolder" class="form-label">Cardholder's Name</label>
+        <input type="text" class="form-control" id="cardHolder" placeholder="Enter your name" required>
+      </div>
+
+      <!-- رقم البطاقة -->
+      <div class="mb-3">
+        <label for="cardNumber" class="form-label">Card Number</label>
+        <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number" required>
+      </div>
+
+      <!-- تاريخ انتهاء البطاقة -->
+      <div class="mb-3">
+        <label for="expiryDate" class="form-label">Expiry Date</label>
+        <input type="month" class="form-control" id="expiryDate" required>
+      </div>
+
+      <!-- رمز الأمان (CVV) -->
+      <div class="mb-3">
+        <label for="cvv" class="form-label">CVV</label>
+        <input type="text" class="form-control" id="cvv" placeholder="Enter CVV" required>
+      </div>
+
+      <!-- زر الدفع -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-dark btn-lg bottom-50">Pay Now</button>
+      </div>
+     
+        <a href="index.html" class="btn  btn-dark btn-lg ">Back to Home</a>
+    
+      <!-- <a href="javascript:history.back()" class="btn btn-secondary">Go Back</a> -->
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

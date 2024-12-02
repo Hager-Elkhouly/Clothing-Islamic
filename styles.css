@@ -1,0 +1,294 @@
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  margin-left: 15px;
+}
+/* Hover effect for nav links */
+.nav-link:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: #eff1f3; /* Change background color on hover */
+  border-radius: 5px; /* Rounded corners */
+}
+/* ===hero */
+.hero-section {
+    background-image: url('image/pexels-photo-19298245.webp'); /* حطي مسار الصورة هنا */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* طول الـsection قد طول الشاشة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+ 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* عرض المحتوى 80% من الشاشة */
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    color: white;
+   margin-bottom: 20px;
+}
+.lead
+{
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn-custom {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #1f2020;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #030404;
+    color: #eff1f3;
+    text-decoration: none;
+}
+
+/* اختيارات الشاشات الصغيرة (أقل من 767px) */
+@media (max-width: 767px) {
+    .hero-section {
+        background-position: center;
+        height: 80vh; /* تقليل الارتفاع في الشاشات الصغيرة */
+    }
+
+    h1 {
+        font-size: 2rem; /* تصغير حجم الخط في الشاشات الصغيرة */
+    }
+
+    .btn-custom {
+        font-size: 1rem;
+        padding: 10px 20px; /* تصغير الحجم */
+    }
+}
+
+/* اختيارات الأجهزة الكبيرة */
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem; /* تكبير حجم الخط للأجهزة الكبيرة */
+    }
+
+    .btn-custom {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+    }
+}
+/* card */
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-buy {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+.btn-buy:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.container {
+  padding: 20px;
+}
+/* contact */
+.contact-section {
+  padding: 40px 0;
+  /* background-color: #f9f9f9; */
+}
+.contact-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-submit {
+  background-color: #141516;
+  color: white;
+  transition: 0.3s;
+}
+.btn-submit:hover {
+  background-color: #ffffff;
+  border: 2px solid black;
+}
+/* features */
+              /* خصائص الخلفية */
+              .features {
+                position: relative;
+                background-image: url("./image/pexels-photo-1108602.jpeg"); /* استبدل بهذا الرابط الفعلي للصورة */
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                padding: 50px 0;
+                color: white;
+              }
+          
+              .features::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); /* دمج اللون الأسود مع الشفافية */
+                z-index: 1;
+              }
+          
+              .features .container {
+                position: relative;
+                z-index: 2; /* لضمان أن النصوص تكون فوق الصورة */
+              }
+          
+              .feature-item {
+                background: rgba(0, 0, 0, 0.7); /* خلفية سوداء مع شفافية */
+                padding: 20px;
+                color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+              }
+          
+              .feature-item:hover {
+                transform: scale(1.1); /* تأثير التكبير عند الهوفر */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* تأثير الظل عند الهوفر */
+              }
+          
+              .feature-item i {
+                color: #fff;
+              }
+          
+              .feature-item h3, .feature-item p {
+                color: #fff;
+              }
+          
+              @media (max-width: 768px) {
+                .feature-item {
+                  margin-bottom: 20px;
+                }
+              }
+       
+/* about us */
+  /* القسم الكامل */
+  .about-section {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا */
+    justify-content: center; /* محاذاة العناصر أفقيًا */
+    padding: 50px 0;
+    /* background-color: #f8f9fa; */
+  }
+
+  /* الصورة */
+  .about-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  /* النص */
+  .about-content {
+    margin-left: 30px;
+    max-width: 600px;
+  }
+
+  .about-content h2 {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-content p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* التعديل عند الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column; /* ترتيب العناصر عموديًا */
+      text-align: center;
+    }
+
+    .about-content {
+      margin-left: 0;
+    }
+
+    .about-image {
+      margin-bottom: 20px;
+    }
+  }
+  /* تنسيق قسم آراء العملاء */
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* تأثير رفع الكارت عند التمرير */
+}
+
+/* .card-img-top {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+} */
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+/* footer */
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer a {
+  color: white;
+  margin: 0 15px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer a:hover {
+  color: #007bff;
+}
